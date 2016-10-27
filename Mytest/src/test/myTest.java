@@ -1,8 +1,13 @@
 package test;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.Iterator;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.Random;
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -48,37 +53,58 @@ public class myTest {
 //		int a= cin.nextInt();
 //		System.out.println(") Changes");
 //		iteratorTest();
-		 list.add(1);
-	        list.add(2);
-	        list.add(3);
-	        list.add(4);
-	        list.add(5);
-	        Thread thread1 = new Thread(){
-	            public void run() {
-	                Iterator<Integer> iterator = list.iterator();
-	                while(iterator.hasNext()){
-	                    Integer integer = iterator.next();
-	                    System.out.println(integer);
-	                    try {
-	                        Thread.sleep(100);
-	                    } catch (InterruptedException e) {
-	                        e.printStackTrace();
-	                    }
-	                }
-	            };
-	        };
-	        Thread thread2 = new Thread(){
-	            public void run() {
-	                Iterator<Integer> iterator = list.iterator();
-	                while(iterator.hasNext()){
-	                    Integer integer = iterator.next();
-	                    if(integer==2)
-	                        iterator.remove(); 
-	                }
-	            };
-	        };
-	        thread1.start();
-	        thread2.start();
+//		 list.add(1);
+//	        list.add(2);
+//	        list.add(3);
+//	        list.add(4);
+//	        list.add(5);
+//	        Thread thread1 = new Thread(){
+//	            public void run() {
+//	                Iterator<Integer> iterator = list.iterator();
+//	                while(iterator.hasNext()){
+//	                    Integer integer = iterator.next();
+//	                    System.out.println(integer);
+//	                    try {
+//	                        Thread.sleep(100);
+//	                    } catch (InterruptedException e) {
+//	                        e.printStackTrace();
+//	                    }
+//	                }
+//	            };
+//	        };
+//	        Thread thread2 = new Thread(){
+//	            public void run() {
+//	                Iterator<Integer> iterator = list.iterator();
+//	                while(iterator.hasNext()){
+//	                    Integer integer = iterator.next();
+//	                    if(integer==2)
+//	                        iterator.remove(); 
+//	                }
+//	            };
+//	        };
+//	        thread1.start();
+//	        thread2.start();
+//		myTest myTest = new myTest();
+//		myTest.corpTets();
+		List<String> strList= new LinkedList<>();
+		strList.add("aaa");
+		strList.add("bbb");
+		strList.add("ccc");
+		for (int i = 0; i < strList.size(); i++) {
+			System.out.println(strList.get(i));
+		}
+		System.out.println("===============");
+		for (String str:strList) {
+			System.out.println(str);
+		}
+		
+	}
+	
+	private void corpTets(){
+		String []personString={"ŒƒÃŒ","≈£ ∫√Ù","ÕÚœ˛≈Ù","¿µ∏Á","‹µ◊”"," ¢∫ÍŒ∞"};
+		List<String> list=Arrays.asList(personString);
+		Collections.shuffle(list);
+		System.out.print(list);
 	}
 	
 	//ConcurrentModificationException“Ï≥£≤‚ ‘∑Ω∑®
