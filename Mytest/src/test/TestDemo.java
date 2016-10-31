@@ -13,6 +13,7 @@ public class TestDemo {
 	JavascriptExecutor js;
 
 	public static void main(String args[]) {
+		//基本数据类型，数组等
 		TestDemo demo = new TestDemo();
 		// char aChar='a';
 		// char enterChar='\r';
@@ -96,6 +97,7 @@ public class TestDemo {
 		// System.out.println(a[0][i]);
 		// }
 
+		//Arrays工具类的使用
 		int[] a1 = { 3, 4, 5, 6 };
 		int[] a2 = { 3, 4, 5, 6 };
 		System.out.println("a1是否=a2："+Arrays.equals(a1, a2));//true
