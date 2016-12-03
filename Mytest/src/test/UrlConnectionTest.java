@@ -12,6 +12,7 @@ import java.util.Map;
 import java.util.Set;
 
 public class UrlConnectionTest {
+	//从URL中取出文件名的方法
 	public static void println(Object object) {
 		System.out.println(object);
 	}
