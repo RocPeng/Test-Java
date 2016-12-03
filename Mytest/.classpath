@@ -25,5 +25,7 @@
 	<classpathentry kind="lib" path="libs/selenium-java-2.53.0-srcs.jar"/>
 	<classpathentry kind="lib" path="libs/selenium-java-2.53.0.jar" sourcepath="libs"/>
 	<classpathentry kind="lib" path="libs/testng-6.9.9.jar"/>
+	<classpathentry kind="lib" path="libs/fastjson-1.2.9-javadoc.jar"/>
+	<classpathentry kind="lib" path="libs/fastjson-1.2.9.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
